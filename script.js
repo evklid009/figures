@@ -24,19 +24,12 @@ $(document).ready(function() {
     });
 
     $('.list-item:eq(4)').on('click', function() {
-        $('.img-five').animate({
-            opacity: 'toggle',
-            height: 'toggle',
-            width: 'toggle'
-        },2000);
+        $('.img-five').fadeToggle('slow');
+
     });
 
     $('.list-item:eq(5)').on('click', function() {  
-        $('.img-six').animate({
-            width: [ "toggle", "swing" ],
-            height: [ "toggle", "swing" ],
-            opacity: "toggle" 
-        }, 1500, "linear");
+        $('.img-six').fadeToggle('slow');
 
     });
 
